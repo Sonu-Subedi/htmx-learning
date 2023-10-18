@@ -1,0 +1,33 @@
+// Brand Colors
+$programiz-brand-dark-base-color: #1f2023;
+$programiz-brand-dark-text-primary: rgba(255, 255, 255, 0.87);
+$programiz-brand-dark-layout-divider: rgba(255, 255, 255, 0.2);
+
+$programiz-brand-dark-layout-top-element: #383b40;
+$programiz-brand-green-color: #52b357;
+$programiz-brand-blue-color: #0556f3;
+
+// Fonts
+$programiz-brand-base-font: "Euclid Circular A";
+$programiz-brand-editor-font: "Droid Sans Mono";
+
+// Font Weights
+$programiz-brand-base-font-weight: 500;
+$programiz-content-title-font-weight: 600;
+$programiz-brand-tertiary: #00a3ff;
+
+// Custom Colors
+$toggle-background: #2d2f34;
+$header-title-background-color: #1c2130;
+$popover-background-color: #2d2f34;
+$popover-hover-color: rgba(255, 255, 255, 0.1);
+$hover-color: #424448;
+$editor-text-color: #e99173;
+$loading-color: rgba(255, 255, 255, 0.3);
+
+// Border
+$default-border: 1px solid $programiz-brand-dark-layout-divider;
+
+//z-index
+$zindex-base: 0;
+$zindex-sticky: 100;

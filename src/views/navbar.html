@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.5"
+      integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav-wrapper">
+        <a
+          href="https://programiz.pro"
+          hx-get="/programizpro"
+          hx-trigger="click"
+          class="logo"
+          title="Programiz PRO Logo"
+        >
+          <span class="logo__img-wrapper">
+            <img src="../assets/images/programiz-pro-logo.svg" alt="logo" />
+          </span>
+          <span class="logo-tag">Pro</span>
+        </a>
+
+        <ul class="nav__list" title="Other Tools">
+          <li class="nav__item">
+            <div class="undefined">
+              <button class="dropdown-button tool-select">
+                <div class="tool-text">YAML Validator</div>
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="chevron-down"
+                  color="#FFF"
+                  height="12"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="color: rgb(255, 255, 255)"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <div
+            class="pro-popover-content popover-bottomRight has-arrow pro-dropdown ready dropdown-wrapper"
+            style="top: 46.6px; left: 338.8px"
+            id="header-navbar"
+          ></div>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      // const navList = document.getElementById("nav-list");
+      // navList.addEventListener("click", () => {
+      //   document
+      //     .getElementById("header-navbar")
+      //     .classList.toggle("on-off-toggle");
+      // });
+      // document.addEventListener("click", (event) => {
+      //   if (!navList.contains(event.target)) {
+      //     document
+      //       .getElementById("header-navbar")
+      //       .classList.remove("on-off-toggle");
+      //   }
+      // });
+    </script>
+  </body>
+</html>

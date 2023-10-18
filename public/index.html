@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Validator</title>
+    <link rel="stylesheet" href="/assets/sass/styles.css" />
+    <link rel="stylesheet" href="/assets/sass/globals.css" />
+
+    <script
+      src="https://unpkg.com/htmx.org@1.9.5"
+      integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+  </head>
+
+  <body>
+    <div hx-get="/navbar" hx-trigger="load">Loading navbar...</div>
+    <!-- <div class="layout">
+      <div class="inputlayout">
+        <div hx-get="/inputheader" hx-trigger="load">
+          Loading inputheader...
+        </div>
+        <div hx-get="/inputEditor" hx-trigger="load">Loading inputeditor..</div>
+      </div>
+      <div class="outputlayout">
+        <div hx-get="/outputheader" hx-trigger="load">
+          Loading outputheader...
+        </div>
+        <div hx-get="/outputEditor" hx-trigger="load">
+          Loading outputeditor..
+        </div>
+      </div>
+    </div> -->
+    <div class="editor">
+      <div class="container editor__wrapper">
+        <div
+          class="editor__input section__editor editor--half-width"
+          id="input"
+        >
+          <div hx-get="/inputHeader" hx-trigger="load" class="editor__header">
+            Loading..
+          </div>
+          <div
+            id="inputContainer"
+            style="height: 500px; width: auto"
+            hx-trigger="load"
+            data="// write your json code here"
+            data-isOutput="false"
+            class="editor__code"
+          ></div>
+        </div>
+        <div class="editor__output section__editor">
+          <div
+            hx-get="/outputHeader"
+            hx-trigger="load"
+            class="editor__output-header"
+          >
+            Loading outputheader...
+          </div>
+          <div
+            id="outputContainer"
+            style="height: 500px; width: auto"
+            hx-trigger="load"
+            data-isOutput="true"
+            class="editor__code editor__code--border-left-n"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <section class="content-section">
+      <div class="container content-frame">
+        <div hx-get="/contentWrapper" hx-trigger="load" class="content-wrapper">
+          Loading...
+        </div>
+        <!-- <div hx-get="/othersTools" hx-trigger="load" class="othertools-wrapper">
+          Loading...
+        </div> -->
+      </div>
+    </section>
+    <!-- <footer hx-get="/footer" hx-trigger="load" class="pro-footer footer dark">
+      Loading...
+    </footer> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+  </head>
+
+  <body>
+    <div
+      id="editorContainer"
+      style="height: 500px; width: auto"
+      hx-trigger="load"
+      class="editor__code"
+    ></div>
+    <script>
+      let jsonData = "";
+      let editor;
+
+      require(["vs/editor/editor.main"], function () {
+        editor = monaco.editor.create(
+          document.getElementById("editorContainer"),
+          {
+            value: jsonData,
+            language: "json",
+            theme: "myTheme",
+            readOnly: false,
+            fontSize: 14,
+            lineHeight: 20,
+            minimap: { enabled: false },
+            fontFamily: "Droid Sans Mono",
+            wordWrap: "bounded",
+            wordWrapColumn: 55,
+          }
+        );
+      });
+    </script>
+  </body>
+</html> -->
